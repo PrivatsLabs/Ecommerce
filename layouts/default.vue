@@ -40,10 +40,14 @@
 </template>
 
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Montserrat";
+
 }
 
 body{
@@ -69,5 +73,10 @@ body{
     height: 25px; /* Hauteur souhaitée */
     color: rgba(0, 0, 0, 0.675) ;
 }
+
+
+
+
+
 </style>
   
