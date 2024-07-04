@@ -92,6 +92,14 @@
 
         <hr>
 
+        <br> <br>
+
+        <a href="#">2024 - BRANDING</a> <br> <br>
+        <a href="#">Mentions legales</a> <br> <br>
+        <a href="#">Conditions generales de vente</a> <br> <br>
+        <a href="#">Conditions generales d'utilisation</a> <br> <br>
+        <a href="#">Gestion des cookies</a>
+
     </footer>
     <AppFooter />
   </div>
