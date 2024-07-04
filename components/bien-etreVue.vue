@@ -45,7 +45,6 @@
     height: auto;
     overflow: auto;
     padding: 10px 10px 10px 0px;
-    margin-left: 15px;
   }
   
   .card{

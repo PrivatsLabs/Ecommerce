@@ -167,7 +167,7 @@
     <br />
     <br />
 
-    <h1 style="margin-left: 15px">Notre gamme bien-etre</h1>
+    <h1 style="margin-left: 15px;">Notre gamme bien-etre</h1>
     <br />
 
     <bien-etreVue></bien-etreVue>
@@ -175,6 +175,16 @@
     <br />
     <br />
     <br />
+
+    <div class="card shadow-sm">
+    <span class="card__title">Subscribe</span>
+    <p class="card__content">Get fresh web design resources delivered straight to your inbox every week.
+    </p>
+    <div class="card__form">
+        <input placeholder="Your Email" type="text">
+        <button class="sign-up"> Envoyer</button>
+    </div>
+</div>
 
     <br> <br> <br>
 
