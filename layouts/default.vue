@@ -125,7 +125,11 @@ body{
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  width: 100%;
   padding: 15px;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
 }
 
 .top-bar div{

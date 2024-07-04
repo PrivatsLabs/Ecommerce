@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <br> <br> <br>
     <img
       src="https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/03/02155535/Banniere-mobile.png"
       alt=""
