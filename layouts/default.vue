@@ -2,6 +2,7 @@
   <div>
     <AppHeader />
 
+    <MenuAzVue></MenuAzVue>
     <MenuVue></MenuVue>
 
     <div class="top-bar shadow">
@@ -130,7 +131,7 @@ body{
   width: 100%;
   padding: 15px;
   position: fixed;
-  z-index: 20;
+  z-index: 15;
   background-color: white;
 }
 

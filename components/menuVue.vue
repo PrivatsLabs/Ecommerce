@@ -92,7 +92,7 @@
 .menu {
   padding: 20px;
   position: fixed;
-  z-index: 70;
+  z-index: 30;
   left: 0;
   width: 100%;
   height: 100%;
