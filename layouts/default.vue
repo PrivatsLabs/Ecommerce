@@ -1,6 +1,9 @@
 <template>
   <div>
     <AppHeader />
+
+    <MenuVue></MenuVue>
+
     <div class="top-bar shadow">
       <div style="width: 100px;">
         <svg
@@ -19,7 +22,6 @@
         </svg>
         <h1>LOGO</h1>
       </div>
-
 
       <div style="display:flex; justify-content: space-between; width: 120px">
        
