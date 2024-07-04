@@ -2,6 +2,7 @@
   <div class="menu-list">
     <div class="top">
       <svg
+       @click="retour"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -19,6 +20,7 @@
       <p class="text-lg"><strong>Nos produits de A a Z</strong></p>
 
       <svg
+       @click="close"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -85,8 +87,30 @@
   </div>
 </template>
 
+<script>
+export default {
+    data() {
+        return{
+
+        }
+        
+    },
+    methods:{
+        retour(){
+            document.querySelector('.menu-list').style.display='none';
+        },
+        close(){
+            document.querySelector('.menu-list').style.display='none';
+            document.querySelector('.menu').style.display='none';
+        }
+    }
+
+}
+</script>
+
 <style scoped>
 .menu-list {
+    display: none;
   position: fixed;
   z-index: 40;
   height: 100vh;

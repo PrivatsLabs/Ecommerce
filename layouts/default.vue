@@ -8,6 +8,7 @@
     <div class="top-bar shadow">
       <div style="width: 100px;">
         <svg
+        @click="menu"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -107,6 +108,28 @@
     <AppFooter />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return{
+     
+    }
+    
+  },
+  methods:{
+    
+    menu(){
+     document.getElementById('menu').style.display='block';
+      
+
+    }
+  }
+
+}
+</script>
+
+
 
   <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');

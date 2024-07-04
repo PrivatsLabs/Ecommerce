@@ -1,7 +1,8 @@
 <template>
-  <div class="menu">
+  <div class="menu" id="menu">
     <div class="menu-top">
       <svg
+      @click="close"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -21,6 +22,7 @@
       <span class="text-sm"> <strong> Nos produits de A a Z</strong></span>
 
       <svg
+        @click="az"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -79,6 +81,28 @@
   </div>
 </template>
 
+<script>
+export default {
+    data() {
+        return{
+
+        }
+        
+    },
+    methods:{
+        az(){
+            document.querySelector('.menu-list').style.display='block';
+        },
+        close(){
+            document.querySelector('.menu').style.display='none';
+        }
+    }
+
+}
+</script>
+
+
+
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -90,6 +114,7 @@
 }
 
 .menu {
+  display: none;
   padding: 20px;
   position: fixed;
   z-index: 30;
