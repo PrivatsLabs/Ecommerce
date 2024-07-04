@@ -1,35 +1,40 @@
 <template>
-   <div class="wrapper">
+  <div class="wrapper">
+    <img
+      src="https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/03/02155535/Banniere-mobile.png"
+      alt=""
+    />
 
-    <img src="https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2023/03/02155535/Banniere-mobile.png" alt="">
-
-    <br> <br>
+    <br />
+    <br />
 
     <div class="meilleur">
+      <h1>
+        Nos meilleures <br />
+        ventes
+      </h1>
+      <br />
 
-        <h1>Nos meilleures <br> ventes</h1>
-        <br>
+      <sliderBestVue></sliderBestVue>
 
-        <sliderBestVue v-for="item in items" :key="item.id"> </sliderBestVue>
+      <br />
+      <br />
 
-
+      
+      
     </div>
-
-</div>
-
+    <afficheVue></afficheVue>
+  </div>
 </template>
 <style scoped>
-
-
-
-h1{
-    font-size: 30px !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    line-height: normal;
+h1 {
+  font-size: 30px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal;
 }
 
-.meilleur{
-    padding: 15px;
+.meilleur {
+  padding: 15px;
 }
 </style>

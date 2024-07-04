@@ -1,10 +1,10 @@
 <template>
   <div class="best">
-    <div class="card">
-      <div class="img-box">
+    <div class="card" v-for="item in items" :key="item.id">
+      <div class="img-box shadow-sm">
         <img
-          src="https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2021/01/03154029/ikk.webp"
-          alt=""
+          :src="item.url"
+          
         />
       </div>
       <div class="info-box">
@@ -17,30 +17,60 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return{
+      items:[
+        {nom: 'Farine de patate douce', info: 'Notre produit phare',prix: '19.99 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2021/01/03154029/ikk.webp'},
 
+        {nom: 'deuxieme', info: 'info',prix: '19 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29113115/Virilis-120-comprimes.png'},
+
+        {nom: 'nom', info: 'info',prix: '19 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29191911/mock-up-optivegan-cacao-1.png'},
+
+        {nom: 'nom', info: 'info',prix: '19 £', url: 'url'},
+        {nom: 'nom', info: 'info',prix: '19 £', url: 'url'},
+      ]
+    }
+  },
+}
+</script>
 
 <style scoped>
+
 .best {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  padding: 10px 10px 10px 0px;
 }
 
 .card{
-    width: 200px;
+    min-width: 220px;
+    height: auto;
     border-radius: 15px;
+    margin-right: 20px;
 }
 
 img {
+  width: 550px;
   height: auto;
   max-width: 100%;
-  border-radius: 15px;
 
 }
 
 .img-box {
     background-color: #F5F4F0;
+    height: 240px;
+    border-radius: 7px;
+
 }
 
 .info-box{
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
+    height: auto;
 
 }
 
