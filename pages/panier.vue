@@ -3,11 +3,12 @@
     <br />
     <br />
     <br />
-    <br />
 
     <h1 class="text-2xl"><strong>Panier</strong></h1>
-    <br />
-    <br />
+    <span style="margin-right: auto !important; font-size: 0.8rem;"> <nuxt-link to="/">Retour</nuxt-link> / panier</span>
+
+<br>
+<br>
 
     <div class="panier-card">
       <div class="img-box">
