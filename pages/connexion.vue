@@ -4,6 +4,12 @@
     <br />
     <br />
 
+
+    <span style="margin-right: auto !important; font-size: 0.8rem;"> <nuxt-link to="/">Retour</nuxt-link> / Login</span>
+
+    <br>
+
+
     <div class="connexion" v-if="etat=='co'">
       <h1 class="text-lg"><strong>Connexion</strong></h1>
       <br />
