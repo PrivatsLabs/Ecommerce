@@ -1,9 +1,25 @@
 <template>
   <div class="search">
+    <svg @click="close"
+    style="margin-left: 90%; margin-top: 20px;"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18 18 6M6 6l12 12"
+      />
+    </svg>
+
     <form class="form shadow-lg">
       <label for="search">
         <input
-        required=""
+          required=""
           autocomplete="off"
           placeholder="Recherche..."
           id="search"
@@ -25,7 +41,7 @@
             ></path>
           </svg>
           <svg
-          @click="close"
+            @click="close"
             stroke-width="2"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -61,17 +77,15 @@
 
 <script>
 export default {
-    data() {
-        return{
-
-        }
+  data() {
+    return {};
+  },
+  methods: {
+    close() {
+      document.querySelector(".search").style.display = "none";
     },
-    methods:{
-        close(){
-            document.querySelector('.search').style.display='none'
-        }
-    }
-}
+  },
+};
 </script>
 
 <style>
