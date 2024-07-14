@@ -1,40 +1,50 @@
 <template>
-    <div class="best">
-      <div class="card" v-for="item in items" :key="item.id">
+  <div class="best">
+    <div class="card" v-for="item in items" :key="item.id">
         <div class="img-box shadow-sm">
-          <img
-            :src="item.url"
-            
-          />
+          <img :src="item.url" alt="Product Image" />
         </div>
-        <div class="info-box">
-          <p class="h2">{{item.nom}}</p>
-          <p class="subtit">{{item.info}}</p>
-  
-          <span>{{item.prix}}</span>
-        </div>
+      <div class="info-box">
+        <p class="h2">{{ item.nom }}</p>
+        <p class="subtit">{{ item.info }}</p>
+        <span>{{ item.prix }}</span>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return{
-        items:[
-          {nom: 'Farine de patate douce', info: 'Notre produit phare',prix: '19.99 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2021/01/03154029/ikk.webp'},
-  
-          {nom: 'deuxieme', info: 'info',prix: '19 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29113115/Virilis-120-comprimes.png'},
-  
-          {nom: 'nom', info: 'info',prix: '19 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29191911/mock-up-optivegan-cacao-1.png'},
-  
-          {nom: 'nom', info: 'info',prix: '19 £', url: 'url'},
-          {nom: 'nom', info: 'info',prix: '19 £', url: 'url'},
-        ]
-      }
-    },
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        {
+          id: 1,
+          nom: 'Farine de patate douce',
+          info: 'Notre produit phare',
+          prix: '19.99 £', 
+          url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2021/01/03154029/ikk.webp'
+        },
+        {
+          id: 2,
+          nom: 'Deuxième produit',
+          info: 'Information sur le deuxième produit',
+          prix: '19 £',
+          url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29113115/Virilis-120-comprimes.png'
+        },
+        {
+          id: 3,
+          nom: 'Troisième produit',
+          info: 'Information sur le troisième produit',
+          prix: '19 £',
+          url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29191911/mock-up-optivegan-cacao-1.png'
+        }
+      ]
+    };
   }
-  </script>
+};
+</script>
+
   
   <style scoped>
   

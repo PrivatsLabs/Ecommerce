@@ -28,8 +28,7 @@
   
           {nom: 'nom', info: 'info',prix: '19 £', url: 'https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/29191911/mock-up-optivegan-cacao-1.png'},
   
-          {nom: 'nom', info: 'info',prix: '19 £', url: 'url'},
-          {nom: 'nom', info: 'info',prix: '19 £', url: 'url'},
+         
         ]
       }
     },

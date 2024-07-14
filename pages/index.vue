@@ -181,8 +181,11 @@
     <p class="card__content">Get fresh web design resources delivered straight to your inbox every week.
     </p>
     <div class="card__form">
-        <input placeholder="Your Email" type="text">
-        <button class="sign-up"> Envoyer</button>
+      <form>
+        <input style="width: 100%;" placeholder="Your Email" type="email" required>
+        <br> <br>
+        <button style="width: 100%;" class="sign-up"> Envoyer</button>
+      </form>
     </div>
 </div>
 

@@ -42,8 +42,7 @@ export default {
           url: "https://cdn-hosting-yam.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/01/30010810/cropped-Supermag-Yohan-Taboucherani-.png",
         },
 
-        { nom: "nom", url: "url" },
-        { nom: "nom", url: "url" },
+      
       ],
     };
   },
