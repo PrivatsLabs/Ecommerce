@@ -6,6 +6,10 @@
             :src="item.url"
             
           />
+
+          <div class="cart shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          </div>
         </div>
         <div class="info-box">
           <p class="h2">{{item.nom}}</p>
@@ -61,10 +65,31 @@
   }
   
   .img-box {
+    position: relative;
       background-color: #F5F4F0;
       height: 240px;
       border-radius: 7px;
   
+  }
+
+  .img-box .cart{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgb(47, 45, 45);
+    width: 33px;
+    padding: 4px;
+
+  }
+
+  .cart svg{
+    color: white;
+    width: 18px;
+   
   }
   
   .info-box{
